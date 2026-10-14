@@ -141,7 +141,7 @@ function dur(j) {
 function profileChart(t) {
   return `<div class="chart-box">${S.skills.map((_,i)=>{
       const v = +t.v[i]||0;
-      return `<div class="chart-col"><i title="${v}\%" style="height:${Math.max(2, v*0.25)}px; background:${col(v)};"></i><span>${v}%</span></div>`
+      return `<div class="chart-col"><i title="${v}%" style="height:${Math.max(2, v*0.25)}px; background:${col(v)};"></i><span>${v}%</span></div>`
   }).join('')}</div>`;
 }
 
